@@ -53,8 +53,6 @@ body {
 
   border-radius: 1rem;
 
-  //padding: 3.2rem;
-
   .container-logo {
     grid-area: container-logo;
   }
@@ -83,7 +81,6 @@ body {
       "text"
       "line";
 
-    //item-topic
     .item-topic {
       grid-area: topic;
 
@@ -105,7 +102,6 @@ body {
       }
     }
 
-    //
     .item-arrow-icon {
       grid-area: topic;
       align-self: center;
@@ -135,35 +131,59 @@ body {
   }
 }
 
-//teste
+//positioning images
+.container-logo {
+  display: grid;
+  align-items: center;
 
-.logo-background {
-  background-image: url("../images/bg-pattern-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: 80% 100%;
-  padding: 5rem;
-  transform: translate(-5rem);
-
-  .logo-woman {
-    background-image: url("../images/illustration-woman-online-desktop.svg");
+  .logo-background {
+    background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 7.5rem;
+    background-size: 80% 100%;
+    padding: 5rem;
+    transform: translate(-5rem);
 
-    display: flex;
-  }
+    display: grid;
 
-  .logo-box {
-    background-image: url("../images/illustration-box-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 80% 80%;
-    padding: 7.5rem;
+    .logo-woman {
+      background-image: url("../images/illustration-woman-online-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 7.5rem;
+
+      display: flex;
+
+      position: relative;
+    }
+
+    .logo-box {
+      background-image: url("../images/illustration-box-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 80% 80%;
+      padding: 7.5rem;
+
+      position: absolute;
+
+      left: 5rem;
+      bottom: 0;
+      right: 25rem;
+    }
   }
 }
 
 // Responsive
 
 @media only screen and(max-width:768px) {
+  .logo-woman {
+    background-image: url("../images/illustration-woman-online-mobile.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 12rem;
+  }
+
+  .logo-box {
+    display: none;
+  }
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -191,19 +211,6 @@ body {
 
     .content-item {
       margin: 0 3.2rem 1.6rem 3.2rem;
-    }
-  }
-
-  .logo-background {
-    .logo-woman {
-      background-image: url("../images/illustration-woman-online-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      padding: 12rem;
-
-      .logo-box {
-        display: none;
-      }
     }
   }
 }
