@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-logo">
+          <div class="logo-background">
+            <div class="logo-woman">
+              <div class="logo-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-content">
+          <h1 class="content-title">FAQ</h1>
+
+          <div class="content-item">
+            <a href="#" class="item-topic" onclick="changeState(1)"
+              >How many team members can I invite?</a
+            >
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="item-arrow-icon"
+            />
+
+            <p class="item-text">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+
+            <hr class="item-line" />
+          </div>
+
+          <div class="content-item">
+            <a href="#" class="item-topic" onclick="changeState(2)"
+              >What is the maximum file upload size?</a
+            >
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="item-arrow-icon"
+            />
+            <p class="item-text">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+            <hr class="item-line" />
+          </div>
+
+          <div class="content-item">
+            <a href="#" class="item-topic" onclick="changeState(3)"
+              >How do I reset my password?</a
+            >
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="item-arrow-icon"
+            />
+            <p class="item-text">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+            <hr class="item-line" />
+          </div>
+
+          <div class="content-item">
+            <a href="#" class="item-topic" onclick="changeState(4)"
+              >Can I cancel my subscription?</a
+            >
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="item-arrow-icon"
+            />
+            <p class="item-text">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+            <hr class="item-line" />
+          </div>
+
+          <div class="content-item">
+            <a href="#" class="item-topic" onclick="changeState(5)"
+              >Do you provide additional support?</a
+            >
+
+            <img
+              src="images/icon-arrow-down.svg"
+              alt=""
+              aria-hidden="true"
+              class="item-arrow-icon"
+            />
+            <p class="item-text">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+            <hr class="item-line" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
